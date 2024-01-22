@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: test-profiled-properties
+  main:
+    cloud-platform: kubernetes
+  config:
+    import: "kubernetes:"
