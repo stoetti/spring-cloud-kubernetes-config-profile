@@ -5,3 +5,10 @@ spring:
     cloud-platform: kubernetes
   config:
     import: "kubernetes:"
+  cloud:
+    kubernetes:
+      config:
+        sources:
+          - name: my-source
+            namespace: default
+            include-profile-specific-sources: true
